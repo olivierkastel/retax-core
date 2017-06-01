@@ -14,8 +14,12 @@ export default class DomCookieProxy extends CookieProxy implements ICookieProxy 
 
   protected _setAuthToken(token: string): void {
     if (!token) return;
-
-    Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { domain: 'archer-app.com' });
+    console.log(this._readAuthToken());
+    console.log(token);
+    if (this._readAuthToken() !== token) {
+      console.log('Cookie set');
+      Cookie.set(COOKIE_AUTH_TOKEN_KEY, token);
+    }
   }
 
   protected _readAuthToken(): string {

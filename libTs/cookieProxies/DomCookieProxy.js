@@ -18,7 +18,12 @@ let DomCookieProxy = class DomCookieProxy extends CookieProxy {
     _setAuthToken(token) {
         if (!token)
             return;
-        Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { domain: 'archer-app.com' });
+        console.log(this._readAuthToken());
+        console.log(token);
+        if (this._readAuthToken() !== token) {
+            console.log('Cookie set');
+            Cookie.set(COOKIE_AUTH_TOKEN_KEY, token);
+        }
     }
     _readAuthToken() {
         return Cookie.get(COOKIE_AUTH_TOKEN_KEY);
