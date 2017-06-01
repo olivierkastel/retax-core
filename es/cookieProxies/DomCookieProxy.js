@@ -41,7 +41,7 @@ var DomCookieProxy = function (_CookieProxy) {
         key: "_setAuthToken",
         value: function _setAuthToken(token) {
             if (!token) return;
-            Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1, path: '/' });
+            Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1, domain: '.archer-app.com' });
         }
     }, {
         key: "_readAuthToken",
