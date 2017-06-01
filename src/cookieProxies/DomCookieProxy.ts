@@ -15,7 +15,7 @@ export default class DomCookieProxy extends CookieProxy implements ICookieProxy 
   protected _setAuthToken(token: string): void {
     if (!token) return;
 
-    Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1 });
+    Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1, path: '/' });
   }
 
   protected _readAuthToken(): string {

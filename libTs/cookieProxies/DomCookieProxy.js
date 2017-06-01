@@ -18,7 +18,7 @@ let DomCookieProxy = class DomCookieProxy extends CookieProxy {
     _setAuthToken(token) {
         if (!token)
             return;
-        Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1 });
+        Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { expires: 1, path: '/' });
     }
     _readAuthToken() {
         return Cookie.get(COOKIE_AUTH_TOKEN_KEY);
