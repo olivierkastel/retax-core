@@ -5,7 +5,7 @@ import { IRetaxConfig, IRetaxConfigStore } from './interfaces';
 
 export const initialConfig: IRetaxConfig = {
   api: {
-    authHeaderName: 'auth_token',
+    authHeaderName: 'auth-server-token',
     baseUrl: '',
   },
   client: {

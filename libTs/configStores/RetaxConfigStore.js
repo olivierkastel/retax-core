@@ -1,7 +1,7 @@
 import { ConfigStore } from 'retax-utils';
 export const initialConfig = {
     api: {
-        authHeaderName: 'auth_token',
+        authHeaderName: 'auth-server-token',
         baseUrl: '',
     },
     client: {

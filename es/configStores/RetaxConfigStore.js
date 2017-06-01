@@ -7,7 +7,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 import { ConfigStore } from 'retax-utils';
 export var initialConfig = {
     api: {
-        authHeaderName: 'auth_token',
+        authHeaderName: 'auth-server-token',
         baseUrl: ''
     },
     client: {
