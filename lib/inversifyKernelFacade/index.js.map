@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/inversifyKernelFacade/index.ts"],"names":["default"],"mappings":";;;;;;;;;;;0DAASA,O;;;;;;AAET;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","file":"index.js","sourcesContent":["export { default as InversifyKernelFacade } from './InversifyKernelFacade';\n\nexport * from './interfaces';\n"]}

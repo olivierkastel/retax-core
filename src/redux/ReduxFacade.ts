@@ -89,7 +89,7 @@ export default class ReduxFacade implements IReduxFacade {
 
   private _createStore(config: ICreateStoreConfig): Store<any> {
     const { initialState, history, middlewares = [], storeEnhancers = [], rootReducer } = config;
-    const finalStoreEnhancers = [];
+    let finalStoreEnhancers = [];
 
     const reduxRouterMiddleware = routerMiddleware(history);
 
@@ -106,7 +106,7 @@ export default class ReduxFacade implements IReduxFacade {
     return createStore(
       rootReducer,
       initialState,
-      compose(middlewareEnhancer, ...finalStoreEnhancers)
+      compose(middlewareEnhancer)
     );
   }
 }

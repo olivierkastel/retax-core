@@ -1,0 +1,1 @@
+{"version":3,"file":"CookieProxy.js","sourceRoot":"","sources":["../../src/cookieProxies/CookieProxy.ts"],"names":[],"mappings":";;;;;;;;;OAAO,EAAE,UAAU,EAAE,MAAM,WAAW;AAGtC;IACE,IAAI,SAAS;QACX,MAAM,CAAC,IAAI,CAAC,cAAc,EAAE,CAAC;IAC/B,CAAC;IAED,IAAI,SAAS,CAAC,KAAa;QACzB,IAAI,CAAC,aAAa,CAAC,KAAK,CAAC,CAAC;IAC5B,CAAC;AAIH,CAAC;AAZD;IAAC,UAAU,EAAE;;eAAA;AAcb,eAAe,WAAW,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/reactRouter/index.ts"],"names":["default"],"mappings":";;;;;;;;;;;sDAASA,O;;;;;;AAET;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","file":"index.js","sourcesContent":["export { default as ReactRouterFacade } from './ReactRouterFacade';\n\nexport * from './interfaces';\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/mediator/index.ts"],"names":["default","RetaxMediator"],"mappings":"AAAA,SAASA,WAAWC,aAApB,QAAyC,YAAzC;AAEA,cAAc,cAAd","file":"index.js","sourcesContent":["export { default as RetaxMediator } from './Mediator';\n\nexport * from './interfaces';\n"]}

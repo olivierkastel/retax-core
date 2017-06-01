@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/constants/internalConfig.ts"],"names":["COOKIE_AUTH_TOKEN_KEY","INITIAL_STATE_KEY"],"mappings":";;;;;AAAO,IAAMA,wDAAgC,mBAAtC;AACA,IAAMC,gDAA4B,mBAAlC","file":"internalConfig.js","sourcesContent":["export const COOKIE_AUTH_TOKEN_KEY: string = 'auth-server-token';\nexport const INITIAL_STATE_KEY: string = '__INITIAL_STATE__';\n"]}

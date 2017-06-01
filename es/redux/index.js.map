@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/redux/index.ts"],"names":["default","ReduxFacade"],"mappings":"AAAA,SAASA,WAAWC,WAApB,QAAuC,eAAvC;AAEA,cAAc,mBAAd;AACA,cAAc,cAAd","file":"index.js","sourcesContent":["export { default as ReduxFacade } from './ReduxFacade';\n\nexport * from './actionsCreators';\nexport * from './interfaces';\n"]}
