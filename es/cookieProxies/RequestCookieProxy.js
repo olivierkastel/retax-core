@@ -49,7 +49,13 @@ var RequestCookieProxy = function (_CookieProxy) {
         key: "_setAuthToken",
         value: function _setAuthToken(token) {
             if (!token) return;
-            this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, token);
+            console.log('________cookie2_______');
+            console.log(this._readAuthToken());
+            console.log(token);
+            if (this._readAuthToken() !== token) {
+                console.log('Cookie set 2');
+                this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, token);
+            }
         }
     }, {
         key: "_readAuthToken",

@@ -23,8 +23,14 @@ export default class RequestCookieProxy extends CookieProxy implements ICookiePr
 
   protected _setAuthToken(token: string): void {
     if (!token) return;
+    console.log('________cookie2_______');
+    console.log(this._readAuthToken());
+    console.log(token);
 
-    this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, token);
+    if (this._readAuthToken() !== token) {
+      console.log('Cookie set 2');
+        this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, token);
+    }
   }
 
   protected _readAuthToken(): string {
