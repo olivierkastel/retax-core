@@ -13,6 +13,7 @@ import CookieProxy from './CookieProxy';
 import { COOKIE_AUTH_TOKEN_KEY } from '../constants';
 let DomCookieProxy = class DomCookieProxy extends CookieProxy {
     deleteAuthToken() {
+        console.log('deleteAuthToken1');
         Cookie.remove(COOKIE_AUTH_TOKEN_KEY);
     }
     _setAuthToken(token) {
@@ -21,12 +22,16 @@ let DomCookieProxy = class DomCookieProxy extends CookieProxy {
         console.log('________cookie1_______');
         console.log(this._readAuthToken());
         console.log(token);
-        if (this._readAuthToken() !== token) {
-            console.log('Cookie set 1');
-            Cookie.set(COOKIE_AUTH_TOKEN_KEY, token);
+        if (this._readAuthToken() === undefined) {
+            console.log('Set cookie');
+            Cookie.set(COOKIE_AUTH_TOKEN_KEY, token, { domain: '.archer-app.com' });
+        }
+        else {
+            console.log('Set nothing');
         }
     }
     _readAuthToken() {
+        console.log('_readAuthToken1');
         return Cookie.get(COOKIE_AUTH_TOKEN_KEY);
     }
 };

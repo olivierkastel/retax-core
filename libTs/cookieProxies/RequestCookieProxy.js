@@ -20,6 +20,7 @@ let RequestCookieProxy = class RequestCookieProxy extends CookieProxy {
         this._context = _context;
     }
     deleteAuthToken() {
+        console.log('deleteAuthToken2');
         this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, undefined);
     }
     _setAuthToken(token) {
@@ -34,6 +35,7 @@ let RequestCookieProxy = class RequestCookieProxy extends CookieProxy {
         }
     }
     _readAuthToken() {
+        console.log('_readAuthToken2');
         return this._context.request.req.cookies[COOKIE_AUTH_TOKEN_KEY];
     }
 };

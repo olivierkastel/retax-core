@@ -18,6 +18,7 @@ export default class RequestCookieProxy extends CookieProxy implements ICookiePr
   }
 
   public deleteAuthToken(): void {
+    console.log('deleteAuthToken2');
     this._context.request.res.cookie(COOKIE_AUTH_TOKEN_KEY, undefined);
   }
 
@@ -34,6 +35,7 @@ export default class RequestCookieProxy extends CookieProxy implements ICookiePr
   }
 
   protected _readAuthToken(): string {
+    console.log('_readAuthToken2');
     return this._context.request.req.cookies[COOKIE_AUTH_TOKEN_KEY];
   }
 }
